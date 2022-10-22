@@ -49,8 +49,8 @@ $(document).ready(function () {
 	 * 原先 YQL 已经无法提供服务了
 	 * 改用 JsonBird：https://bird.ioliu.cn/
 	 * 
-	
-	var url = 'https://bird.ioliu.cn/v1/?url=https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8';
+	*/
+	var url = 'https://onedrive.hehysh.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/pbimg/20221019_101202723_iOS.jpg';
 	var imgUrls = JSON.parse(sessionStorage.getItem("imgUrls"));
 	var index = sessionStorage.getItem("index");
 	var $panel = $('#panel');
@@ -104,4 +104,3 @@ $('.btn-mobile-menu__icon').click(function () {
 	}
 	$('.btn-mobile-menu__icon').toggleClass('social iconfont icon-list social iconfont icon-ngleup animated fadeIn');
 });
-*/
