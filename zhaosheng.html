@@ -11,5 +11,146 @@
         </style>
 </head>
 <body>
-    鸡你太美
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">
+                        <a class="blog-button">
+                            <div class="img"><img src="./images/logo.png" alt="img" class="js-avatar iUp profilepic">
+                            </div>
+                            <div class="info iUp">
+                                <div class="info-back">
+                                    <h2>上海市致远中学</h2>
+                                    <p>2022 · 努力学习</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <br />欢迎！
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">「展能成志，攀高致远」</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://www.shier.eu.org/" target="_blank" class="blog-button">
+                                            <div>师资力量</div>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <!--<a onclick="update()" class="blog-button">-->
+                                        <a href="https://www.shier.eu.org" target="_blank" class="blog-button">
+                                            <div>中考光荣榜</div>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="http://www.shier.eu.org" target="_blank" class="blog-button">
+                                            <div>招生简章</div>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://www.shier.eu.org" target="_blank" class="blog-button">
+                                            <div>校园一览</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="iUp">
+                            <nav class="cover-navigation navigation--social">
+                                <ul class="navigation">
+
+                                    <li class="navigation__item">
+                                        <a href="https://www.hcw3.cn" title="Github" target="_blank">
+                                            <i class="fas fa-code-branch"></i>
+                                            <span class="label">Github</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://www.hcw3.cn" title="Telegram" target="_blank">
+                                            <i class="fab fa-telegram-plane"></i>
+                                            <span class="label">Telegram</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://www.hcw3.cn" title="Twitter" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                            <span class="label">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a onclick="weixin()" title="微信" target="_blank">
+                                            <i class="fab fa-weixin"></i>
+                                            <script>
+                                                function weixin() {
+                                                    Swal.fire({
+                                                        title: "请扫码",
+                                                        text: "请使用微信扫一扫",
+                                                        confirmButtonText: "好的",
+                                                        imageUrl: "./images/weixin.png",
+                                                        imageWidth: 150,
+                                                        imageHeight: 150
+                                                    })
+                                                }
+                                            </script>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://www.hcw3.cn" title="Email" target="_blank">
+                                            <i class="fas fa-envelope"></i>
+                                            <span class="label">Email</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <div class="remark iUp">
+            <p class="power">Copyright © <a href="">上海市致远中学</a>
+                <script>document.write(' - ' + (new Date()).getFullYear())</script> 上海市致远中学官网
+            </p>
+        </div>
+        <!-- 客户端信息 -->    <div id="fps" style="z-index:5;position:fixed;bottom:3px;left:3px;color:#2196F3;font-size:10px;-webkit-pointer-events: none;    -moz-pointer-events: none;    -ms-pointer-events: none;    -o-pointer-events: none;"></div>
+    
+         
+         
+    </header>
+    <!--izitoast弹窗设置-->
+    <script>
+        iziToast.settings({
+            timeout: 4000,//调试
+            icon: 'Fontawesome',
+            closeOnEscape: 'true',
+            position: 'topRight',
+            transitionOut: 'fadeOutRight',
+            displayMode: '2',
+            layout: '2',
+            transitionIn: 'bounceInLeft',
+        });
+    </script>
+    <!--izitoast内容-->
+    <script>
+        function update() {
+            iziToast.info({
+                icon: 'fad fa-times-octagon',
+                backgroundColor: '#efefef',
+                title: '站点暂时关闭',
+                message: '只是出现了一点小问题 ~'
+            });
+        }
+    </script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/fetch.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    
+   
+    
 </body>
